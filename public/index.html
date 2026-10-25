@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador distribuido</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">WebSocket Demo</p>
+    <h1>Contador colaborativo</h1>
+
+    <div id="contador" class="counter">0</div>
+
+    <button id="btnIncrementar" type="button">+1</button>
+
+    <p id="estado" class="status">Conectando...</p>
+    <p id="socketId" class="socket-id"></p>
+    <p id="usuarios">Usuarios conectados: 0</p>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
